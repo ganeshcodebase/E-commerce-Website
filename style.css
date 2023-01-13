@@ -1,0 +1,862 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins';
+    font-size:medium;
+}
+#colours{
+    background-color: #e3e2f4;
+    background-color: #008a70;
+    background-color: #7d7c8c;
+    background-color: #212531;
+    background-color: #a2a5b3;
+    background-color: #ebcbab;
+}
+.container{
+    width: 90%;
+    margin: auto; 
+}
+.navigation{
+    background-color: #e3e2f4;
+    width: 100%;
+    box-shadow: 1px 2px 10px #a2a5b3;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+.logo{
+    margin-top: 10px;
+}
+nav{
+    width: 100%;
+    line-height: 60px;
+    height: 60px;
+    background-color: #e3e2f4;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #212531;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: #008a70;
+}
+nav ul li a.active::after,
+nav ul li a:hover::after{
+    content: "";
+    width: 35%;
+    height: 2.5px;
+    background: #008a70;
+    position: absolute;
+    bottom: 17px;
+    left: 1px;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding-right: 30px;
+    position: relative;
+}
+nav ul{
+    display: flex;
+}
+/* banner starts here */
+.banner{
+    background-image: url("./images/hero4.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-headings{
+    padding-top: 45vh;
+    font-family: 'poppins';
+}
+.Trade-in-off{
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: larger;
+}
+.banner-heading1,.banner-heading2{
+    font-size: 45px;
+    font-weight: 550;
+    color: #212531;
+}
+.banner-heading2{
+    color: #008a70;
+}
+.banner-heading3{
+    color: #a2a5b3;
+}
+.banner-button{
+    background-image: url("./images/button.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height: 33px;
+    /* padding-top: 10px; */
+    margin-top: 10px;
+}
+.banner-button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #008a70;
+    padding-left: 30px;
+}
+/* features container starts */
+.features{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.feature{
+    cursor: pointer;
+    width: 13%;
+    /* background-color: red; */
+    height: 30vh;
+    background-color: white;
+    box-shadow: 1px 2px 10px #a2a5b3;
+}
+.feature:hover{
+    box-shadow: 2px 2px 15px #a2a5b3;
+    transition: .3s;
+}
+.feature1,.feature2,.feature3,.feature4,.feature5,.feature6{
+    padding-top: 20px;
+}
+.feature1-label,.feature2-label,.feature3-label,.feature4-label,.feature5-label,.feature6-label{
+    font-size: small;
+    text-align: center;
+    margin:10px 20px 0px 20px;
+    border-radius: 4px;
+    background-color: #ffd5e2;
+    color: #0D4C92;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.feature2-label{
+    background-color:#B8DD7F;
+}
+.feature3-label{
+    background-color:#B8D9ED;
+}
+.feature4-label{
+    background-color:#C8C8C8;
+}
+.feature5-label{
+    background-color:#B8D9ED;
+}
+.feature6-label{
+    background-color:#F8E7F1;
+}
+/* ----------------------------------features css container ends here----------------------- */
+
+
+/* ----------------------------------products css container starts here----------------------- */
+
+.products_names,.new-arraivals_names{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products_heading,.new-arraivals_heading{
+    margin-top: 10vh;
+    font-size: 45px;
+    font-weight: 700;
+}
+.products_desc,.new-arraivals_desc{
+    color: #7d7c8c;
+}
+.products_main1,.products_main2,.new_arraivals,.new_arraivals2{
+/* width: 100%; */
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.products{
+    display: flex;
+    height: 40vh;
+    /* width: 20%; */
+ 
+}
+.product{
+    /* background-color: red; */
+    height: 60vh;
+    width: 22%;
+    border-radius: 20px;
+    border: 1px solid #e3e2f4;
+}
+.product:hover{
+    /* box-shadow:5px 5px 2px 5px #a2a5b3; */
+    box-shadow: 0 0 11px #a2a5b3;
+    transition: .3s;
+}
+.product1_background,.product2_background,.product3_background,.product4_background,.product5_background,.product6_background,.product7_background,.product8_background,.productn1_background,.productn2_background,.productn3_background,.productn4_background,.productn5_background,.productn6_background,.productn7_background,.productn8_background{
+    margin: auto;
+    height: 40vh;
+    width: 92%;
+    margin-top: 10px;
+    border-radius: 20px;
+    /* background-color: #e3e2f4; */
+    background-image: url("./images/products/f1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product2_background{
+    background-image: url("./images/products/f2.jpg");
+}
+.product3_background{
+    background-image: url("./images/products/f3.jpg");
+}
+.product4_background{
+    background-image: url("./images/products/f4.jpg");
+}
+.product5_background{
+    background-image: url("./images/products/f5.jpg");
+}
+.product6_background{
+    background-image: url("./images/products/f6.jpg");
+}
+.product7_background{
+    background-image: url("./images/products/f7.jpg");
+}
+.product8_background{
+    background-image: url("./images/products/f8.jpg");
+}
+.brand{
+    color:#a2a5b3;
+}
+.product1-label,.product2-label,.product3-label,.product4-label,.product5-label,.product6-label,.product7-label,.product8-label,.productn1-label,.productn2-label,.productn3-label,.productn4-label,.productn5-label,.productn6-label,.productn7-label,.productn8-label{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.product_cart{
+    text-align: right;
+    margin-bottom: 20px;
+}
+.rating{
+    display: flex;
+    justify-content:space-between;
+    margin-right: 20px;
+}
+.price{
+    margin-top: 5px;
+    color: #008a70;
+    font-weight: 700;
+}
+.product_category{
+    font-weight: 700;
+}
+.cart{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #DBF4F6;
+    padding: 10px;
+    border-radius: 100px;
+    color: #008a70;
+    margin-top: -30px;
+}
+/* ----------------------------------products css container ends here----------------------- */
+/* ----------------------------------products css container starts here----------------------- */
+.repair-services-banner{
+    margin-top: 15vh;
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 10vh;
+    /* background-color: rebeccapurple; */
+    background-image: url("./images/banner/b2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.repair-services-headings{
+    font-weight: 800;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding-top: 15vh;
+}
+.repair-services-content,.red{
+    font-size: xx-large;
+    padding-top: 10px;
+}
+.red{
+    color: #CF0A0A;
+}
+.repair-services-button{
+    border: none;
+    font-size: 15px;
+    font-family: 'poppins';
+    padding: 8px 20px 8px 20px;
+    margin-top: 2vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.repair-services-button:hover{
+    background-color: #008a70;
+    color: white;
+    transition: .7s;
+}
+/* --------------------------- new arraivals banner css starts here ------------------------ */
+
+.new-arraivals_heading{
+    margin-top: 0vh;
+}
+.productn1_background{
+    background-image: url("./images/products/n1.jpg");
+}
+.productn2_background{
+    background-image: url("./images/products/n2.jpg");
+}
+.productn3_background{
+    background-image: url("./images/products/n3.jpg");
+}
+.productn4_background{
+    background-image: url("./images/products/n4.jpg");
+}
+.productn5_background{
+    background-image: url("./images/products/n5.jpg");
+}
+.productn6_background{
+    background-image: url("./images/products/n6.jpg");
+}
+.productn7_background{
+    background-image: url("./images/products/n7.jpg");
+}
+.productn8_background{
+    background-image: url("./images/products/n8.jpg");
+}
+
+/* --------------------------- new arraivals banner css ends here ------------------------ */
+/* --------------------------- mini banner css starts here ------------------------ */
+.mini-banners{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.mini-banners .banner1{
+    height: 55vh;
+    width: 49%;
+    background-image:url('./images/banner/b17.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mini-banners .banner2{
+    width: 49%;
+    height: 55vh;
+    background-image:url('./images/banner/b10.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-mini-banners{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    /* margin-bottom: 10vh; */
+}
+.sub-mini-banners .banner3,.sub-mini-banners .banner4,.sub-mini-banners .banner5{
+    width: 32%;
+    height: 35vh;
+    background-color: red;
+}
+.sub-mini-banners .banner3,.sub-mini-banners .banner4,.sub-mini-banners .banner5{
+    background-image: url('./images/banner/b7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-mini-banners .banner4{
+    background-image: url('./images/banner/b4.jpg');
+}
+.sub-mini-banners .banner5{
+    background-image: url('./images/banner/b18.jpg');
+}
+.mini-banners .banner1-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+    color: white;
+    margin-left: 5%;
+}
+.banner1-heading{
+    font-weight:800;
+    font-size: xx-large;
+}
+.banner1-content{
+    font-weight: 700;
+}
+.mini-banners .btn button{
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    padding: 5px 20px 5px 20px;
+}
+.mini-banners .btn button:hover{
+    background-color: #008a70;
+    color: white;
+    border: 2px solid #008a70;
+    transition: .7s;
+    cursor: pointer;
+}
+.sub-mini-banners .banner3-data,.sub-mini-banners .banner4-data,.sub-mini-banners .banner5-data{
+    display: flex;
+    margin-top: 15vh;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.banner3-heading,.banner4-heading,.banner5-heading{
+    color: white;
+    font-weight: 800;
+    font-size: 23px;
+}
+.banner3-content,.banner4-content,.banner5-content{
+    color: #FB2576;
+    font-weight: 800;
+}
+.newsletter-banner{
+    margin-top: 10vh;
+    height: 25vh;
+    display: flex;
+    width: 100%;
+    background-color: #001f44;
+    background-image: url('./images/banner/b14.png');
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.left-banner{
+    height:25vh;
+    width: 50%;
+}
+.newsletter-data{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    padding-top: 8vh;
+}
+.newsletter-heading{
+    color: white;
+    font-weight: 800;
+    font-size: 23px;
+}
+.banner5-content-sub{
+    color: #F49D1A;
+}
+.right-banner{
+    height: 25vh;
+    width: 50%;
+    padding-top: 10vh;
+    padding-left: 20%;
+}
+.right-banner .mail{
+    /* color: white; */
+    padding: 5px;
+}
+.right-banner .signup{
+    background-color: #008a70;
+    padding: 6px;
+    border: none;
+    margin-left: -5px;
+    color: white;
+}
+.right-banner input:focus{
+    outline: none;
+}
+
+footer{
+    height: 40vh;
+    /* background-color: red; */
+    width: 100%;
+}
+.footermain{
+    display: flex;
+    margin-top: 10vh;
+}
+.footer-sub1{
+    height: 40vh;
+    width: 40%;
+    /* background-color: lightblue; */
+}
+.Address{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+.socialmedia{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.socialmedia .icons{
+    margin-top: 10px;
+}
+.socialmedia .followus{
+    font-weight: 800;
+}
+.socialmedia .icons .fa-brands{
+    padding-right: 3px;
+}
+
+.contact-menu img{
+    /* margin-top: 10vh; */
+    height: 40px;
+    width: 130px;
+}
+.contact-menu{
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    margin-top: 3vh;
+    font-weight:700 ;
+}
+.Address .co{
+    color: #a2a5b3;
+    font-weight: 400;
+}
+.footer-sub2,.footer-sub3{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 15%;
+}
+.footer-sub2 a,.footer-sub3 a{
+    text-decoration: none;
+    color: #a2a5b3;
+}
+.footer-sub1 .socialmedia i{
+    cursor: pointer;
+}
+.footer-sub4{
+    display: flex;
+    flex-direction: column;
+}
+.footer-sub1 .heading,.footer-sub2 .heading,.footer-sub3 .heading,.footer-sub4 .heading{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.footer-sub4 .content{
+    color:#7d7c8c ;    
+}
+.footer-sub4 .apps{
+    display: flex;
+}
+.footer-sub4 .apps img{
+    border: 1px solid #008a70;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.footer-sub4 .payment{
+    margin-top: 10px;
+    color:#7d7c8c ;  
+}
+.footer-sub4 .payments{
+    margin-top: 10px;
+}
+.copyrights{
+    margin: auto;
+    text-align: center;
+    color: #7d7c8c;
+    padding-bottom: 5vh;
+}
+.main-footer{
+    height: 45vh;
+    width: 100%;
+}
+
+
+/* -------------------------------- home page css ends here ----------------------------------*/
+/* -------------------------------- shop page css and blog page,aboutuspage and contactuspage banner starts here -------------------------------- */
+
+.shop-page-banner,.blog-page-banner,.aboutus-page-banner,.contactus-page-banner{
+    height: 50vh;
+    width: 100%;
+    background-image: url('./images/banner/b1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blog-page-banner{
+    background-image: url('./images/banner/b19.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.shop-page-banner .headings,.blog-page-banner .headings,.aboutus-page-banner .headings,.contactus-page-banner .headings{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    margin: auto;
+}
+.shop-page-banner .heading,.blog-page-banner .heading,.aboutus-page-banner .heading,.contactus-page-banner .heading{
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
+}
+.shop-page-banner .desc,.blog-page-banner .desc,.aboutus-page-banner .desc,.contactus-page-banner .desc{
+    color: white;
+}
+.paging{
+    margin: auto;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.paging .butt{
+    font-weight: 800;
+    padding: 10px 15px;
+    background-color: #008a70;
+    margin-right: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* shop page,Blog page,contactuspage and aboutuspage css ends starts here */
+
+/* blog page content css starts here */
+.blogpage-container{
+    display: flex;
+}
+.blogpage-left-container1,.blogpage-left-container2,.blogpage-left-container3,.blogpage-left-container4{
+    height: 42vh;
+    width: 45%;
+    background-image: url("./images/blog/b1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5%;
+    position: relative;
+    z-index: -9;
+}
+.blogpage-left-container2{
+    background-image: url("./images/blog/b2.jpg");
+}
+.blogpage-left-container3{
+    background-image: url("./images/blog/b3.jpg");
+}
+.blogpage-left-container4{
+    background-image: url("./images/blog/b4.jpg");
+}
+
+.blogpage-content-date{
+    font-size: 50px;
+    font-weight: 900;
+    color: #a2a5b3;
+    margin-bottom: -28px;
+    margin-left: 10%;
+    position: relative;
+    z-index: -9;
+}
+.blogpage-right-container{
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    height: 40vh;
+    width: 45%;
+    margin-left: 20px; 
+}
+.blogpage-right-container .heading{
+    font-weight: 800;
+}
+.blogpage-right-container .content{
+    /* font-weight: 200; */
+    font-family: 'poppins';
+    color: #7d7c8c;
+}
+.blogpage-right-container .button{
+    font-weight: 500;
+    font-size: small;
+    cursor: pointer;
+}
+.blogpage-right-container .button::after{
+    content: "";
+    width: 40px;
+    height: 1.5px;
+    background: black;
+    position: absolute;
+    z-index: -9;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+/* Blog page content css ends here */
+/* Aboutus page css starts here */
+
+.aboutus-page-banner{
+    background-image: url('./images/about/banner.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutus-page-container{
+    display: flex;
+    margin-top: 10vh;
+}
+.aboutus-left-container{
+    height: 60vh;
+    width: 55%;
+    background-image: url("./images/about/a6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutus-right-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    height: 40vh;
+    width: 40%;
+    margin-left: 20px; 
+}
+.aboutus-right-container .heading{
+    font-size: xx-large;
+    font-weight: 800;
+}
+.aboutus-right-container .content{
+    text-align: justify;
+}
+.aboutus-app-promotion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+.aboutus-app-heading{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.aboutus-app-banner{
+    margin: auto;
+    margin-top: 5vh;
+}
+/* Aboutus page css ends here */
+/* Contact us page css starts here */
+
+.contactus-page-banner{
+    background-image: url('./images/about/banner.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contactus-page-container{
+    display: flex;
+    margin-top: 10vh;
+}
+.contactus-left-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    height: 40vh;
+    width: 45%;
+    margin-left: 20px; 
+}
+.contactus-left-container .heading{
+    font-size: x-large;
+    font-weight: 800;
+}
+.aboutus-left-container .content{
+    text-align: justify;
+}
+.contactus-left-container .nav_head{
+    color: #a2a5b3;
+    margin-bottom: 10px;
+}
+.contactus-left-container .content1{
+    font-weight: 700;
+    margin-top: 10px;
+}
+.contactus-left-container .content2{
+    color: #a2a5b3;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contactus-left-container .content2 i{
+    margin-right: 10px; 
+}
+.contactus-left-container .content2 .main{
+    margin-top: 10px;
+}
+
+.contactus-leaveamessage-banner{
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 10vh;
+    justify-content: space-between;
+    width: 85%;
+    border: 1px solid #c9c8ce;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contactus-leaveamessage-banner .left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.left .content1{
+color: #a2a5b3;
+}
+.left .heading{
+    font-weight: 800;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+.left .input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    text-indent: 10px;
+}
+.left .submit{
+    padding: 5px 15px;
+    background-color: #008a70;
+    /* text-decoration: none; */
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.contactus-leaveamessage-banner .right{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.contactus-leaveamessage-banner .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.contactus-leaveamessage-banner .content .name{
+    font-size: small;
+    font-weight: 800;
+}
+.contactus-leaveamessage-banner .content .content1{
+    font-size: small;
+    color: #a2a5b3;
+}
+.contactus-leaveamessage-banner .right .row1-main,.contactus-leaveamessage-banner .right .row2-main,.contactus-leaveamessage-banner .right .row3-main{
+    display: flex;
+    margin-bottom: 20px;
+}
+/* Contact us page css ends here */

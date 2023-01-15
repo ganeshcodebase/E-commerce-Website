@@ -719,18 +719,18 @@ footer{
         /* display: none; */
     }
 }
-@media (max-width:477px) {
+@media (max-width:600px) {
     .banner-heading1, .banner-heading2 {
         font-size: 25px;
         font-weight: 550;
     }
     .feature {
-        width: 155px;
-        margin: 10px 10px;
+        width: 150px;
+        margin: 5px 5px;
     }
     .products_heading, .new-arraivals_heading {
         margin-top: 5vh;
-        font-size: 40px;
+        font-size: 30px;
     }
     .product {
         width: 100%;
@@ -744,6 +744,10 @@ footer{
         margin-top: 5vh;
         height: 24vh;
         margin-bottom: 0px;
+    }
+    .mini-banners .banner1, .mini-banners .banner2{
+        height: 32vh;
+        width: 100%;
     }
     .sub-mini-banners .banner3-data, .sub-mini-banners .banner4-data, .sub-mini-banners .banner5-data {
         margin-top: 10vh;
@@ -761,13 +765,23 @@ footer{
         height: 25vh;
         flex-direction: column;
     }
+    .left-banner{
+        width: 90%;
+    }
     .newsletter-data{
         margin-left: 10%;
         padding-top: 0vh;
     }
     .right-banner{
         padding-top: 2vh;
-        padding-left: 10px;
+    }
+    .right-banner .mail{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .right-banner .signup{
+        padding: 6px;
+        font-size: 10px;
     }
     .newsletter-heading{
         padding-top: 10px;
@@ -776,7 +790,7 @@ footer{
         flex-direction: column;
     }
     .main-footer{
-        height: 90vh;
+        height: 125vh;
     }
     .footer-sub2{
         margin-top: 5vh; 

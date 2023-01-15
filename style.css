@@ -719,7 +719,7 @@ footer{
         /* display: none; */
     }
 }
-@media (max-width:477px) {
+@media (max-width:600px) {
     .banner-heading1, .banner-heading2 {
         font-size: 25px;
         font-weight: 550;

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <style>
+        html,body{
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- ---------------- navigation starts here---------------- -->
+    <div class="navigation">
+        <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png">
+            </div>
+            <div>
+            <ul class="nav-menu" id="navmenu">
+                <div class="mobile">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+            </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shoppage.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a class="bag" class="active" href="cartpage.html"><i class="fa fa-shopping-bag"></i></a></li>
+            </ul>
+            </div>
+            <div class="mobile">
+            <a href="cartpage.html"><i class="fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
+        </nav>
+        
+    </div>
+    </div>
+    
+    <!-- ---------------- navigation ends here---------------- -->
+    <!----------------------------cartpage banner starts here--------------------- -->
+    <div class="cart-page-banner">
+        <section class="headings">
+            <span class="heading">#cart</span>
+            <span class="desc">add your coupon code & SAVE upto 70%!</span>
+        </section>
+    </div>
+    <!----------------------------cartpage banner ends here--------------------- -->
+
+    <!----------------------------cartpage table container starts here--------------------- -->
+    <div class="cart-table container">
+        <table>
+            <thead>
+                <tr>
+                    <td>REMOVE</td>
+                    <td>IMAGE</td>
+                    <td>PRODUCT</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>SUBTOTAL</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-xmark-circle"></i></td>
+                    <td><img src="./images/products/f1.jpg" width="70px"></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>₹999</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹999</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-xmark-circle"></i></td>
+                    <td><img src="./images/products/f3.jpg" width="70px"></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>₹999</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹999</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-xmark-circle"></i></td>
+                    <td><img src="./images/products/f2.jpg" width="70px"></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>₹999</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹999</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <!----------------------------cartpage table container ends here--------------------- -->
+    <!----------------------------cartpage coupon and total section starts here--------------------- -->
+    <section class="cart-banner container">
+        <div class="cart-left-container">
+            <span class="heading">
+                Apply Coupon
+            </span>
+            <span class="input">
+                <input class="text" type="text" placeholder="Enter your coupon">
+                <input class="button" type="button" value="Apply" name="Apply">
+            </span>
+        </div>
+        <div class="cart-right-container">
+            <span class="c1">
+            <table>
+                <thead>
+                    <td>Cart Totals</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cart Subtotal</td><td>₹2997</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td><td>Free</td>
+                    </tr>
+                    <tr class="total">
+                        <td>Total</td><td>₹2997</td>
+                    </tr>
+                </tbody>
+            </table>
+        </span>
+        <span class="c2">
+            <input type="button" value="Proceed to checkout">
+        </span>
+        </div>
+    </section>
+    <!----------------------------cartpage coupon and total section starts here--------------------- -->
+    <!----------------------------cartpage newsletter starts here--------------------- -->
+    <div class="newsletter-banner">
+        <section class="left-banner">
+            <section class="newsletter-data">
+                <span class="newsletter-heading">Signup For Newsletters</span>
+                <span><span class="newsletter-content">Get E-mail updates about our latest shop and</span><span class="banner5-content-sub"> special offers</span></span>
+            </section>
+        </section>
+        <section class="right-banner">
+            <form action="">
+                <input class="mail" type="email" placeholder="Your email address"/>
+                <input class="signup" name="signup" value="Sign Up" type="submit">
+            </form>
+        </section>
+    </div>
+    <!----------------------------cartpage newsletter ends here--------------------- -->
+    <!----------------------------cartpage footer object starts here--------------------- -->
+    <object class="main-footer" data="./footer.html" type="text/html"></object>
+    <!----------------------------cartpage footer object ends here--------------------- -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
+    <style>
+        html,body{
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 <body>
     <!-- ---------------- navigation starts here---------------- -->
@@ -17,26 +22,38 @@
             <div class="logo">
                 <img src="./images/logo.png">
             </div>
-            <ul>
+            <div>
+            <ul class="nav-menu" id="navmenu">
+                <div class="mobile">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+            </div>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shoppage.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="aboutus.html">About</a></li>
-                <li><a class="active" href="Contact">Contact</a></li>
-                <li><a href="cartpage.html"><i class="fa fa-shopping-bag"></i></a></li>
+                <li><a class="active" href="contactus.html">Contact</a></li>
+                <li><a class="bag" href="cartpage.html"><i class="fa fa-shopping-bag"></i></a></li>
             </ul>
+            </div>
+            <div class="mobile">
+            <a href="cartpage.html"><i class="fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
         </nav>
+        
     </div>
     </div>
     
     <!-- ---------------- navigation ends here---------------- -->
+    <!----------------------------contactus banner starts here--------------------- -->
     <div class="contactus-page-banner">
         <section class="headings">
             <span class="heading">#let's talk</span>
             <span class="desc">LEAVE A MESSAGE,We love to hear from you </span>
         </section>
     </div>
-
+    <!----------------------------contactus banner ends here--------------------- -->
+    <!----------------------------contactus page container starts here--------------------- -->
     <div class="contactus-page-container container">    
         <div class="contactus-left-container">
             <span class="nav_head">
@@ -60,7 +77,8 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7639.355390787692!2d80.81597413769397!3d16.792703448903232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3675e5f312c661%3A0xab7189f421622491!2sIIIT%20Nuzvid%20Campus%2C%20Nuzividu%2C%20Andhra%20Pradesh%20521202!5e0!3m2!1sen!2sin!4v1673623084414!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-
+    <!----------------------------contactus page container ends here--------------------- -->
+    <!----------------------------contactus page leaveamessage-banner starts here--------------------- -->
     <div class="contactus-leaveamessage-banner container">
         <div class="left">
         <span class="content1">
@@ -134,7 +152,8 @@
     </div>
 
     </div>
-
+    <!----------------------------contactus page leaveamessage-banner starts here--------------------- -->
+    <!----------------------------contactus page newsletter starts here--------------------- -->
     <div class="newsletter-banner">
         <section class="left-banner">
             <section class="newsletter-data">
@@ -149,7 +168,10 @@
             </form>
         </section>
     </div>
+    <!----------------------------contactus page newsletter ends here--------------------- -->
+    <!----------------------------contactus page footer object starts here--------------------- -->
     <object class="main-footer" data="./footer.html" type="text/html"></object>
+    <!----------------------------contactus page footer object ends here--------------------- -->
 
     <script src="script.js"></script>
 </body>

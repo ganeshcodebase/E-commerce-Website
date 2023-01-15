@@ -20,12 +20,13 @@
     background-color: #e3e2f4;
     width: 100%;
     box-shadow: 1px 2px 10px #a2a5b3;
-    overflow: hidden;
     position: fixed;
     top: 0;
 }
 .logo{
     margin-top: 10px;
+    /* width: 30%; */
+    /* background-color: #CF0A0A; */
 }
 nav{
     width: 100%;
@@ -34,6 +35,13 @@ nav{
     background-color: #e3e2f4;
     display: flex;
     justify-content: space-between;
+}
+.nav-menu{
+    /* width:100%; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav ul li a{
     text-decoration: none;
@@ -59,15 +67,18 @@ nav ul li{
     list-style-type: none;
     padding-right: 30px;
     position: relative;
+    /* display: flex; */
 }
-nav ul{
-    display: flex;
+
+.mobile{
+    display: none;
 }
 /* banner starts here */
 .banner{
     background-image: url("./images/hero4.png");
     height: 100vh;
     width: 100%;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -111,13 +122,15 @@ nav ul{
     margin-top: 10vh;
     display: flex;
     justify-content: space-between;
-   
+    align-items: center;
+    flex-wrap: wrap;
 }
 .feature{
     cursor: pointer;
-    width: 13%;
+    width: 180px;
     /* background-color: red; */
-    height: 30vh;
+    /* height: 30vh; */
+    padding-bottom: 25px;
     background-color: white;
     box-shadow: 1px 2px 10px #a2a5b3;
 }
@@ -155,10 +168,7 @@ nav ul{
     background-color:#F8E7F1;
 }
 /* ----------------------------------features css container ends here----------------------- */
-
-
 /* ----------------------------------products css container starts here----------------------- */
-
 .products_names,.new-arraivals_names{
     margin: auto;
     display: flex;
@@ -581,11 +591,205 @@ footer{
     width: 100%;
 }
 
+@media (max-width:799px){
+    #navmenu{
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 25px 0 0 10px;
+        transition: 0.7s;
+    }
+    .mobile{
+        display: flex;
+        align-items: center ;
+    }
+    .mobile i{
+        color: #212531;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    nav ul li .bag{
+        display: none;
+    }
+    .banner{
+        height: 70vh;
+        background-position:top 30% right 30%;
+    }
+    .banner-headings {
+        padding-top: 30vh;
+        font-family: 'poppins';
+    }
+    .features {
+        margin-top: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .feature {
+        margin: 15px 15px;
+    }
+    .products_main1, .products_main2, .new_arraivals, .new_arraivals2 {
+        margin-top: 2vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .product {
+        width: 44%;
+        margin: 15px 15px;
+    }
+    .repair-services-headings {
+        padding-top: 5vh;
+    }
+    .repair-services-banner {
+        margin-top: 5vh;
+        height: 25vh;
+    }
+    .mini-banners {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mini-banners .banner1-data {
+        margin-top: 5vh;
+    }
+    .mini-banners .banner1,.mini-banners .banner2 {
+        margin-top: 10px;
+        height: 25vh;
+        width: 100%;
+    }
+    .sub-mini-banners {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1vh;
+    }
+    .sub-mini-banners .banner3,.sub-mini-banners .banner4,.sub-mini-banners .banner5{
+        width: 32%;
+        height: 25vh;
+        background-color: red;
+    }
+    .sub-mini-banners .banner3,.sub-mini-banners .banner4,.sub-mini-banners .banner5{
+        background-position: center;
+    }
+    .newsletter-banner{
+        margin-top: 10vh;
+        height: 18vh;
+        display: flex;
+        width: 100%;
+        background-color: #001f44;
+        background-image: url('./images/banner/b14.png');
+        background-repeat: repeat;
+        background-position: center;
+    }
+    .newsletter-data {
+        padding-top: 2vh;
+    }
+    .right-banner {
+        height: 25vh;
+        padding-top: 7vh;
+        width: 100%;
+        padding-left: 10%;
+    }
+    .copyrights {
+        margin: auto;
+        text-align: center;
+        color: #7d7c8c;
+        margin-top: 30vh;
+        /* padding-bottom: 0vh; */
+    }
+    .footer-sub4{
+        display:flex;
+        flex-direction: column;
+    }
+    .footer-sub4 .apps img{
+        height: 40px;
+        width: 120px;
+        border: 1px solid #008a70;
+        margin-right: 5px;
+        margin-top: 10px;
+        border-radius: 7px;
+        cursor: pointer;
+        /* display: none; */
+    }
+}
+@media (max-width:477px) {
+    .banner-heading1, .banner-heading2 {
+        font-size: 25px;
+        font-weight: 550;
+    }
+    .feature {
+        width: 155px;
+        margin: 10px 10px;
+    }
+    .products_heading, .new-arraivals_heading {
+        margin-top: 5vh;
+        font-size: 40px;
+    }
+    .product {
+        width: 100%;
+        margin: 15px 15px;
+    }
+    .repair-services-content, .red {
+        font-size: medium;
+        padding-top: 10px;
+    }
+    .repair-services-banner {
+        margin-top: 5vh;
+        height: 24vh;
+        margin-bottom: 0px;
+    }
+    .sub-mini-banners .banner3-data, .sub-mini-banners .banner4-data, .sub-mini-banners .banner5-data {
+        margin-top: 10vh;
+    }
+    .sub-mini-banners{
+        flex-direction: column;
+    }
+    .sub-mini-banners .banner3,.sub-mini-banners .banner4,.sub-mini-banners .banner5{
+        height: 25vh;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .newsletter-banner{
+        margin-top: 5vh;
+        height: 25vh;
+        flex-direction: column;
+    }
+    .newsletter-data{
+        margin-left: 10%;
+        padding-top: 0vh;
+    }
+    .right-banner{
+        padding-top: 2vh;
+        padding-left: 10px;
+    }
+    .newsletter-heading{
+        padding-top: 10px;
+    }
+    .footermain{
+        flex-direction: column;
+    }
+    .main-footer{
+        height: 90vh;
+    }
+    .footer-sub2{
+        margin-top: 5vh; 
+    }
+    .copyrights {
+        margin-top: 5vh;
+    }
+}
 
 /* -------------------------------- home page css ends here ----------------------------------*/
 /* -------------------------------- shop page css and blog page,aboutuspage and contactuspage banner starts here -------------------------------- */
 
-.shop-page-banner,.blog-page-banner,.aboutus-page-banner,.contactus-page-banner{
+.shop-page-banner,.blog-page-banner,.aboutus-page-banner,.contactus-page-banner,.cart-page-banner{
     height: 50vh;
     width: 100%;
     background-image: url('./images/banner/b1.jpg');
@@ -599,19 +803,19 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.shop-page-banner .headings,.blog-page-banner .headings,.aboutus-page-banner .headings,.contactus-page-banner .headings{
+.shop-page-banner .headings,.blog-page-banner .headings,.aboutus-page-banner .headings,.contactus-page-banner .headings,.cart-page-banner .headings{
     text-align: center;
     display: flex;
     flex-direction: column;
     padding-top: 25vh;
     margin: auto;
 }
-.shop-page-banner .heading,.blog-page-banner .heading,.aboutus-page-banner .heading,.contactus-page-banner .heading{
+.shop-page-banner .heading,.blog-page-banner .heading,.aboutus-page-banner .heading,.contactus-page-banner .heading,.cart-page-banner .heading{
     font-size: xx-large;
     font-weight: 800;
     color: white;
 }
-.shop-page-banner .desc,.blog-page-banner .desc,.aboutus-page-banner .desc,.contactus-page-banner .desc{
+.shop-page-banner .desc,.blog-page-banner .desc,.aboutus-page-banner .desc,.contactus-page-banner .desc,.cart-page-banner .desc{
     color: white;
 }
 .paging{
@@ -860,3 +1064,120 @@ color: #a2a5b3;
     margin-bottom: 20px;
 }
 /* Contact us page css ends here */
+
+/* Cart page css starts here */
+.cart-page-banner{
+    background-image: url('./images/about/banner.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cart-table table{
+    margin-top: 10vh;
+    width: 100%;
+    border-collapse: collapse;
+    
+    
+}
+.cart-table table thead{
+    border:1px solid #a2a5b3;
+}
+.cart-table table td{
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-weight: 700;
+    font-size: medium;
+}
+.cart-table table td:nth-child(1){
+    width: 100px;
+}
+.cart-table table td:nth-child(2){
+    width: 150px;
+}
+.cart-table table td:nth-child(3){
+    width: 200px;
+}
+.cart-table table td:nth-child(4){
+    width: 100px;
+}
+.cart-table table td:nth-child(5){
+    width: 100px;
+}
+.cart-table table td:nth-child(6){
+    width: 100px;
+}
+tbody tr td .fa-xmark-circle{
+    color: #008a70;
+    cursor: pointer;
+}
+tbody tr td input{
+    width: 30px;
+}
+
+.cart-banner{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-left-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.cart-left-container .heading{
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.cart-left-container .input .text{
+    text-indent: 10px;
+    font-size: medium;
+}
+.cart-left-container .input .button{
+    font-size: small;
+    padding: 5px 10px;
+    background-color: #008a70;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 800;
+}
+.cart-right-container table{
+    border-collapse: collapse;
+}
+.cart-right-container{
+    width: 40%;
+    border: 1px solid #a2a5b3;
+    padding: 10px;
+}
+.cart-right-container table thead{
+    font-weight: 800;
+}
+.cart-right-container table tbody tr td{
+    border: 1px solid #a2a5b3;
+    padding-left: 10px;
+}
+.cart-right-container table tbody tr{
+    color: #a2a5b3;
+}
+.cart-right-container table tbody td:nth-child(1){
+    width: 20%;
+}
+.cart-right-container table tbody td:nth-child(2){
+    width: 20%;
+}
+.cart-right-container table tbody .total{
+    color: black;
+    font-weight: 800;
+}
+.cart-right-container .c2 input{
+    font-weight: 600;
+    color: white;
+    padding: 5px 10px;
+    background-color: #008a70;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Cart page css ends here */

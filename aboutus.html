@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
+    <style>
+        html,body{
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 <body>
     <!-- ---------------- navigation starts here---------------- -->
@@ -17,19 +22,30 @@
             <div class="logo">
                 <img src="./images/logo.png">
             </div>
-            <ul>
+            <div>
+            <ul class="nav-menu" id="navmenu">
+                <div class="mobile">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+            </div>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shoppage.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="About">About</a></li>
+                <li><a class="active" href="aboutus.html">About</a></li>
                 <li><a href="contactus.html">Contact</a></li>
-                <li><a href="cartpage.html"><i class="fa fa-shopping-bag"></i></a></li>
+                <li><a class="bag" href="cartpage.html"><i class="fa fa-shopping-bag"></i></a></li>
             </ul>
+            </div>
+            <div class="mobile">
+            <a href="cartpage.html"><i class="fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
         </nav>
+        
     </div>
     </div>
     
     <!-- ---------------- navigation ends here---------------- -->
+    <!----------------------------aboutus banner starts here--------------------- -->
     <div class="aboutus-page-banner">
         <section class="headings">
             <span class="heading">#KnowUs</span>
@@ -54,7 +70,8 @@
             
         </div>
     </div>
-    
+    <!----------------------------aboutus banner ends here--------------------- -->
+    <!----------------------------aboutus promotion banner starts here--------------------- -->
     <div class="aboutus-app-promotion">
         <div class="aboutus-app-heading">
             Download Our App
@@ -64,7 +81,8 @@
         </div>
 
     </div>
-
+    <!----------------------------aboutus promotion banner ends here--------------------- -->
+    <!----------------------------aboutus features container starts here--------------------- -->
     <div class="features container">
     
         <div class="feature">
@@ -117,7 +135,8 @@
             </section>
         </div>
     </div>
-
+    <!----------------------------aboutus feaatures container ends here--------------------- -->
+    <!----------------------------aboutus newsletter starts here--------------------- -->
     <div class="newsletter-banner">
         <section class="left-banner">
             <section class="newsletter-data">
@@ -132,7 +151,10 @@
             </form>
         </section>
     </div>
+    <!----------------------------aboutus newsletter ends here--------------------- -->
+    <!----------------------------aboutus footer object starts here--------------------- -->
     <object class="main-footer" data="./footer.html" type="text/html"></object>
+    <!----------------------------aboutus footer object ends here--------------------- -->
 
     <script src="script.js"></script>
 </body>

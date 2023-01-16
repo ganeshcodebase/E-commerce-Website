@@ -4,13 +4,18 @@
     font-family: 'poppins';
     font-size:medium;
 }
+/* ------------------------ home page css starts here------------------ */
+/* colours used */
 #colours{
-    background-color: #e3e2f4;
-    background-color: #008a70;
-    background-color: #7d7c8c;
-    background-color: #212531;
-    background-color: #a2a5b3;
-    background-color: #ebcbab;
+    color: #e3e2f4;
+    color: #008a70;
+    color: #7d7c8c;
+    color: #212531;
+    color: #a2a5b3;
+    color: #0D4C92;
+    color: #ebcbab;
+    color: #F49D1A;
+    color: #FB2576;
 }
 .container{
     width: 90%;
@@ -25,8 +30,6 @@
 }
 .logo{
     margin-top: 10px;
-    /* width: 30%; */
-    /* background-color: #CF0A0A; */
 }
 nav{
     width: 100%;
@@ -37,8 +40,6 @@ nav{
     justify-content: space-between;
 }
 .nav-menu{
-    /* width:100%; */
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,14 +63,11 @@ nav ul li a:hover::after{
     bottom: 17px;
     left: 1px;
 }
-
 nav ul li{
     list-style-type: none;
     padding-right: 30px;
     position: relative;
-    /* display: flex; */
 }
-
 .mobile{
     display: none;
 }
@@ -108,7 +106,6 @@ nav ul li{
     background-repeat: no-repeat;
     background-size: contain; 
     height: 33px;
-    /* padding-top: 10px; */
     margin-top: 10px;
 }
 .banner-button a{
@@ -128,8 +125,6 @@ nav ul li{
 .feature{
     cursor: pointer;
     width: 180px;
-    /* background-color: red; */
-    /* height: 30vh; */
     padding-bottom: 25px;
     background-color: white;
     box-shadow: 1px 2px 10px #a2a5b3;
@@ -184,7 +179,6 @@ nav ul li{
     color: #7d7c8c;
 }
 .products_main1,.products_main2,.new_arraivals,.new_arraivals2{
-/* width: 100%; */
     margin-top: 10vh;
     display: flex;
     justify-content: space-between;
@@ -192,18 +186,14 @@ nav ul li{
 .products{
     display: flex;
     height: 40vh;
-    /* width: 20%; */
- 
 }
 .product{
-    /* background-color: red; */
     height: 60vh;
     width: 22%;
     border-radius: 20px;
     border: 1px solid #e3e2f4;
 }
 .product:hover{
-    /* box-shadow:5px 5px 2px 5px #a2a5b3; */
     box-shadow: 0 0 11px #a2a5b3;
     transition: .3s;
 }
@@ -213,7 +203,6 @@ nav ul li{
     width: 92%;
     margin-top: 10px;
     border-radius: 20px;
-    /* background-color: #e3e2f4; */
     background-image: url("./images/products/f1.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -319,7 +308,6 @@ nav ul li{
     transition: .7s;
 }
 /* --------------------------- new arraivals banner css starts here ------------------------ */
-
 .new-arraivals_heading{
     margin-top: 0vh;
 }
@@ -347,14 +335,12 @@ nav ul li{
 .productn8_background{
     background-image: url("./images/products/n8.jpg");
 }
-
 /* --------------------------- new arraivals banner css ends here ------------------------ */
 /* --------------------------- mini banner css starts here ------------------------ */
 .mini-banners{
     margin-top: 10vh;
     display: flex;
     justify-content: space-between;
-
 }
 .mini-banners .banner1{
     height: 55vh;
@@ -374,12 +360,10 @@ nav ul li{
     display: flex;
     justify-content: space-between;
     margin-top: 5vh;
-    /* margin-bottom: 10vh; */
 }
 .sub-mini-banners .banner3,.sub-mini-banners .banner4,.sub-mini-banners .banner5{
     width: 32%;
     height: 35vh;
-    background-color: red;
 }
 .sub-mini-banners .banner3,.sub-mini-banners .banner4,.sub-mini-banners .banner5{
     background-image: url('./images/banner/b7.jpg');
@@ -447,7 +431,6 @@ nav ul li{
     background-repeat: repeat;
     background-position: center;
 }
-
 .left-banner{
     height:25vh;
     width: 50%;
@@ -474,7 +457,6 @@ nav ul li{
     padding-left: 20%;
 }
 .right-banner .mail{
-    /* color: white; */
     padding: 5px;
 }
 .right-banner .signup{
@@ -487,12 +469,6 @@ nav ul li{
 .right-banner input:focus{
     outline: none;
 }
-
-footer{
-    height: 40vh;
-    /* background-color: red; */
-    width: 100%;
-}
 .footermain{
     display: flex;
     margin-top: 10vh;
@@ -500,7 +476,6 @@ footer{
 .footer-sub1{
     height: 40vh;
     width: 40%;
-    /* background-color: lightblue; */
 }
 .Address{
     display: flex;
@@ -521,7 +496,6 @@ footer{
 .socialmedia .icons .fa-brands{
     padding-right: 3px;
 }
-
 .contact-menu img{
     /* margin-top: 10vh; */
     height: 40px;
@@ -586,12 +560,8 @@ footer{
     color: #7d7c8c;
     padding-bottom: 5vh;
 }
-.main-footer{
-    height: 45vh;
-    width: 100%;
-}
-
-@media (max-width:799px){
+/* Responsive css for Tablets */
+@media (max-width:1080px){
     #navmenu{
         display: flex;
         flex-direction: column; 
@@ -673,7 +643,6 @@ footer{
     .sub-mini-banners .banner3,.sub-mini-banners .banner4,.sub-mini-banners .banner5{
         width: 32%;
         height: 25vh;
-        background-color: red;
     }
     .sub-mini-banners .banner3,.sub-mini-banners .banner4,.sub-mini-banners .banner5{
         background-position: center;
@@ -697,28 +666,23 @@ footer{
         width: 100%;
         padding-left: 10%;
     }
-    .copyrights {
-        margin: auto;
-        text-align: center;
-        color: #7d7c8c;
-        margin-top: 30vh;
-        /* padding-bottom: 0vh; */
+    .footermain{
+        margin-top: 5vh;
     }
-    .footer-sub4{
-        display:flex;
-        flex-direction: column;
+    .copyrights{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vh;
+    }
+    .footer-sub1,.footer-sub2,.footer-sub3,.footer-sub4{
+        height: 25vh;
     }
     .footer-sub4 .apps img{
         height: 40px;
         width: 120px;
-        border: 1px solid #008a70;
-        margin-right: 5px;
-        margin-top: 10px;
-        border-radius: 7px;
-        cursor: pointer;
-        /* display: none; */
     }
 }
+/* Responsive css for mobiles */
 @media (max-width:600px) {
     .banner-heading1, .banner-heading2 {
         font-size: 25px;
@@ -787,22 +751,25 @@ footer{
         padding-top: 10px;
     }
     .footermain{
+        display: flex;
         flex-direction: column;
     }
-    .main-footer{
-        height: 125vh;
+    .footer-sub1{
+        margin-bottom: 10px; 
+        height: 55vh;
     }
-    .footer-sub2{
-        margin-top: 5vh; 
+    .footer-sub2,.footer-sub3{
+        margin-top: 10px;
+        height: 25vh;
+        width: 100%;
     }
     .copyrights {
-        margin-top: 5vh;
+        margin-top: 10vh;
+        font-size: 12px;
     }
 }
-
 /* -------------------------------- home page css ends here ----------------------------------*/
 /* -------------------------------- shop page css and blog page,aboutuspage and contactuspage banner starts here -------------------------------- */
-
 .shop-page-banner,.blog-page-banner,.aboutus-page-banner,.contactus-page-banner,.cart-page-banner{
     height: 50vh;
     width: 100%;
@@ -848,7 +815,6 @@ footer{
     cursor: pointer;
 }
 /* shop page,Blog page,contactuspage and aboutuspage css ends starts here */
-
 /* blog page content css starts here */
 .blogpage-container{
     display: flex;
@@ -873,7 +839,6 @@ footer{
 .blogpage-left-container4{
     background-image: url("./images/blog/b4.jpg");
 }
-
 .blogpage-content-date{
     font-size: 50px;
     font-weight: 900;
@@ -890,12 +855,12 @@ footer{
     height: 40vh;
     width: 45%;
     margin-left: 20px; 
+    text-align: justify;
 }
 .blogpage-right-container .heading{
     font-weight: 800;
 }
 .blogpage-right-container .content{
-    /* font-weight: 200; */
     font-family: 'poppins';
     color: #7d7c8c;
 }
@@ -914,9 +879,40 @@ footer{
     margin-top: 8px;
     margin-left: 10px;
 }
-/* Blog page content css ends here */
-/* Aboutus page css starts here */
-
+/* Responsive css for Tablets */
+@media (max-width:1080px){
+    .blogpage-left-container1,.blogpage-left-container2,.blogpage-left-container3,.blogpage-left-container4{
+        height: 30vh;
+        width: 45%;
+    }
+    .blogpage-right-container{
+        height: 23vh;
+    }
+    .paging{
+        margin-top: 5vh;
+        margin-bottom: 0vh;
+    }
+}
+/* Responsive css for mobiles */
+@media (max-width:600px) {
+    .blogpage-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .blogpage-left-container1,.blogpage-left-container2,.blogpage-left-container3,.blogpage-left-container4{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .blogpage-right-container{
+        height: 20vh;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+/*------------------ Blog page content css ends here ---------------------------*/
+/*---------------------- Aboutus page css starts here ------------------------*/
 .aboutus-page-banner{
     background-image: url('./images/about/banner.png');
     background-position: top;
@@ -964,9 +960,42 @@ footer{
     margin: auto;
     margin-top: 5vh;
 }
-/* Aboutus page css ends here */
-/* Contact us page css starts here */
-
+/* Responsive css for Tablets */
+@media (max-width:1080px) {
+    .aboutus-page-container{
+        flex-direction: column;
+    }
+    .aboutus-left-container {
+        height: 30vh;
+        width: 100%;
+    }
+    .aboutus-right-container{
+        height: 15vh;
+        width: 100%;
+        margin-left: 0px; 
+    }
+    .aboutus-app-banner video{
+        height: 40vh;
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+/* Responsive css for Mobiles */
+@media (max-width:600px) {
+    .aboutus-right-container{
+        height: 60vh;
+        font-size: 5px;
+        width: 100%;
+        margin-left: 0px; 
+    }
+    .aboutus-app-banner video{
+        height: 40vh;
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+/*----------------------------------- Aboutus page css ends here -----------------------*/
+/*--------------------------------- Contact us page css starts here ---------------------*/
 .contactus-page-banner{
     background-image: url('./images/about/banner.png');
     background-position: top;
@@ -1012,10 +1041,8 @@ footer{
 .contactus-left-container .content2 .main{
     margin-top: 10px;
 }
-
 .contactus-leaveamessage-banner{
     display: flex;
-    /* flex-direction: column; */
     margin-top: 10vh;
     justify-content: space-between;
     width: 85%;
@@ -1023,7 +1050,6 @@ footer{
     padding: 30px;
     border-radius: 10px;
 }
-
 .contactus-leaveamessage-banner .left{
     display: flex;
     flex-direction: column;
@@ -1049,7 +1075,6 @@ color: #a2a5b3;
 .left .submit{
     padding: 5px 15px;
     background-color: #008a70;
-    /* text-decoration: none; */
     border-style: none;
     border-radius: 5px;
     color: white;
@@ -1077,9 +1102,81 @@ color: #a2a5b3;
     display: flex;
     margin-bottom: 20px;
 }
-/* Contact us page css ends here */
-
-/* Cart page css starts here */
+/* Responsive css for Tablets */
+@media (max-width:1080px) {
+    .contactus-page-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+    .contactus-left-container {
+        margin-top: 2vh;
+        height: 25vh;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .contactus-right-container iframe{
+        width: 100%;
+        height: 40vh;
+    }
+    .left .input{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+/* Responsive css for Mobiles */
+@media (max-width:600px) {
+    .contactus-page-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+    .contactus-left-container {
+        margin-top: 5vh;
+        height: 60vh;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .contactus-leaveamessage-banner{
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        margin-top: 10vh;
+        width: 90%;
+        border: 1px solid #c9c8ce;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .contactus-right-container iframe{
+        width: 100%;
+        height: 40vh;
+    }
+    .contactus-leaveamessage-banner .left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .left .input{
+        margin-bottom: 20px;
+    }
+    .left .submit{
+        margin-bottom: 10px;
+        padding: 5px 15px;
+        background-color: #008a70;
+        /* text-decoration: none; */
+        border-style: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    .contactus-leaveamessage-banner .right{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+/*----------------------------------- Contact us page css ends here -------------------------*/
+/*------------------------------------ Cart page css starts here ---------------------------*/
 .cart-page-banner{
     background-image: url('./images/about/banner.png');
     background-position: top;
@@ -1090,8 +1187,6 @@ color: #a2a5b3;
     margin-top: 10vh;
     width: 100%;
     border-collapse: collapse;
-    
-    
 }
 .cart-table table thead{
     border:1px solid #a2a5b3;
@@ -1128,7 +1223,6 @@ tbody tr td .fa-xmark-circle{
 tbody tr td input{
     width: 30px;
 }
-
 .cart-banner{
     margin-top: 10vh;
     display: flex;
@@ -1194,4 +1288,36 @@ tbody tr td input{
     border-radius: 5px;
     cursor: pointer;
 }
-/* Cart page css ends here */
+/* Responsive css for Tablets */
+@media (max-width:1080px) {
+    .cart-left-container .input .text{  
+        margin-top: 10px;
+        width: 70%;
+    }
+}
+/* Responsive css for Mobiles */
+@media (max-width:600px) {
+    .cart-table{
+        overflow: auto;
+    }
+    .cart-banner{
+        flex-direction: column;
+    }
+    .cart-left-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .cart-right-container{
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        border: 1px solid #a2a5b3;
+        padding: 10px;
+    }
+    .cart-left-container .input{
+        margin-left: 10px;
+    }
+}
+/*----------------------------------------- Cart page css ends here -----------------------------*/
